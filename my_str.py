@@ -1,5 +1,5 @@
 #FIX THE LINE BELOW
-class xyz : #<-----Replace xyz-make a new class, MyStr, that inherits from str
+class MyStr(str) : #<-----Replace xyz-make a new class, MyStr, that inherits from str
     """
     Build a subclass of str with some new, fun methods.
     """
@@ -42,4 +42,13 @@ class xyz : #<-----Replace xyz-make a new class, MyStr, that inherits from str
         #       do this in as little as 1 line.
         #YOUR CODE BELOW:
         #################
+        '''
+        self.take_out=take_out
+        self.use_this=use_this
+        b=take_out
+        c=use_this
+        '''
+        return super (MyStr,self).replace(take_out,use_this)
+    
+        
         
